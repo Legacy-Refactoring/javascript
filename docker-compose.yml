@@ -13,7 +13,13 @@ services:
       - ./init.sql:/docker-entrypoint-initdb.d/01-init.sql:ro
       - ./seeder.sql:/docker-entrypoint-initdb.d/02-seeder.sql:ro
 
-  lang:
+  javascript:
+    image: node:22
+    container_name: legacy_javascript
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: node legacy.js
 
 volumes:
   postgres_data:
