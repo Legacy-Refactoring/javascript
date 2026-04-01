@@ -1,0 +1,16 @@
+{
+  "name": "legacy-payment-system-js",
+  "version": "1.0.0",
+  "description": "Extremely insecure legacy payment system in JavaScript - Educational bad code example",
+  "main": "legacy.js",
+  "scripts": {
+    "start": "node legacy.js",
+    "dev": "node legacy.js"
+  },
+  "dependencies": {
+    "pg": "^8.13.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
